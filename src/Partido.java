@@ -1,13 +1,13 @@
 public class Partido {
 		private String nombre;
-		private String n_miembros;
+		private int n_miembros;
 
 
 	public void setNombrePar(String dato){
     	this.nombre = dato;
     }
 
-    public void setN_MiembrosPar(String dato){
+    public void setN_MiembrosPar(int dato){
     	this.n_miembros = dato;
     }
 

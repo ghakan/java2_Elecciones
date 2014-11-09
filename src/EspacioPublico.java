@@ -5,7 +5,7 @@ public class EspacioPublico {
 		private String direccion;
 
 	public void setNombreEsp(String dato){
-    	this.nomre = dato;
+    	this.nombre = dato;
     }
 	public void setTipoEsp(String dato){
     	this.tipo = dato;

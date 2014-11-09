@@ -24,14 +24,13 @@ public class Ayuntamiento {
     public String getNombreAyu() {
         return this.nombre;
     }
-    public int getNom_AlcaldeAyu() {
+    public String getNom_AlcaldeAyu() {
         return this.nom_alcalde;
     }
-    public String getN_TrabajadoresAyu() {
+    public int getN_TrabajadoresAyu() {
         return this.n_trabajadores;
     }
-
-    public int getLocalidadAyu() {
+    public String getLocalidadAyu() {
         return this.localidad;
     }
     public String getDireccionAyu() {
