@@ -14,7 +14,7 @@ public class EspacioPublico {
     	this.localidad = dato;
     }
     public void setDireccionEsp(String dato){
-    	this.nombre = dato;
+    	this.direccion = dato;
     }
 
 
