@@ -1,5 +1,5 @@
-KK
-LL
-HH
-UDC
-MLP
+KK, 26, Luis, derecha
+LL, 34, Pepe, izquierda
+HH, 23, Jon, derecha
+UDC, 67, Peio, izquierda
+MLP, 54, Andres, derecha
