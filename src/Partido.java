@@ -1,28 +1,25 @@
+
+//package java2_Elecciones.src.Partido;
+
 public class Partido {
 		private String nombre;
-		private int n_miembros;
+		private String n_miembros;
         private String presidente;
         private String tipo;
 
-public Partido(){
-        this.nombre = "";
-        this.n_miembros = 0;
-        this.presidente = "";
-        this.tipo = "";
-    }
-
-    public Partido(String nombre, int n_miembros, String presidente, String tipo)
-        {   this.nombre = nombre;
-            this.n_miembros = n_miembros;
-            this.presidente = presidente;
-            this.tipo = tipo;
+    public Partido(String nom, String n_mie, String pres, String tip)
+        {   setNombrePar(nom);
+            setN_MiembrosPar(n_mie);
+            setPresidentePar(pres);
+            setTipoPar(tip);
         }
 
     // SET
 	public void setNombrePar(String dato){
     	this.nombre = dato;
+        //(System.out.println("\n "+nombre);
     }
-    public void setN_MiembrosPar(int dato){
+    public void setN_MiembrosPar(String dato){
     	this.n_miembros = dato;
     }
     public void setPresidentePar(String dato){
@@ -36,7 +33,7 @@ public Partido(){
     public String getNombrePar() {
         return this.nombre;
     }
-    public int getN_MiembrosPar() {
+    public String getN_MiembrosPar() {
         return this.n_miembros;
     }
      public String getPresidentePar() {

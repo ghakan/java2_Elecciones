@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.io.IOException;
 import java.util.StringTokenizer;
 import java.util.Iterator;
+//import java2_Elecciones.src.Partido;
 
 public class Elecciones {
 		public static void main(String[] args) throws IOException{
@@ -122,43 +123,54 @@ public class Elecciones {
 			BufferedReader fr = new BufferedReader(new FileReader("/home/zubiri/ProyectosJava/java2_Elecciones/src/listadoPartidos.txt"));
 
 			//Arraylist
-			//ArrayList<String> myarraylist = new ArrayList<String>();
+			ArrayList<String> myarraylist = new ArrayList<String>();
 
-		ArrayList<Partido> myarraylist = new ArrayList<Partido>();
+		//ArrayList<Partido> myarraylist = new ArrayList<Partido>();
 
 			String contenido;
-			StringTokenizer st = new StringTokenizer(fr+",");
+			//StringTokenizer st = new StringTokenizer(fr+",");
 			  while ((contenido = fr.readLine()) != null) {
 			       //System.out.println(contenido);
-
 			       myarraylist.add(contenido);
 			  } 
+			  StringTokenizer st = new StringTokenizer(myarraylist+",");
+			  Partido ope_partido = new Partido(st.nextToken(), st.nextToken(), st.nextToken(), st.nextToken());
+
 			 //Muestro los partidos que tiene el fichero
 			//System.out.println("\nPartidos que participan en las elecciones\n"+myarraylist);
 			
 			//StringTokenizer st = new StringTokenizer(myarraylist+",");
 
 			//Partido
-			/*Partido ope_partido = new Partido();
+			//Partido ope_partido = new Partido();
 
 			String[] resultadoPar = new String[4];
 
-				ope_partido.setNombrePar(st.nextToken());
-				ope_partido.setPresidentePar(st.nextToken());
+			//String resulta;
+
+			//resulta = ope_partido.getNombrePar();
+
+			//System.out.println("\nPartidos que participan en las elecciones\n"+resulta);
+
+				//ope_partido.setNombrePar(st.nextToken());
+				//ope_partido.setPresidentePar(st.nextToken());
 
 				resultadoPar[0] = ope_partido.getNombrePar();
-				resultadoPar[1] = ope_partido.getPresidentePar();*/
+				resultadoPar[1] = ope_partido.getN_MiembrosPar();
+				resultadoPar[2] = ope_partido.getPresidentePar();
+				resultadoPar[3] = ope_partido.getTipoPar();
 
-			System.out.println("\nPartidos que participan en las elecciones\n");
+				for (int i=0; i<resultadoPar.length; i++){
+			  		System.out.println(resultadoPar[i]);
+				}
+			/*System.out.println("\nPartidos que participan en las elecciones\n");
 			   while (st.hasMoreTokens()) {  
 			   		System.out.println(st.nextToken());   
-			   } 
+			   } */
 
-			  //System.out.println("\nPartidos que participan en las elecciones\n"+resutadoPar[0]+"\n"+resutadoPar[1]+"\n");
-
-			myarraylist.clear();
+			/*myarraylist.clear();
 			if (myarraylist.size() == 0){
 				System.out.println("\n ArrayList vaciado correctamente");
-			}
+			}*/
 		}
 	}
